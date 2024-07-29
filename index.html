@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Authentication | Firebase</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assiet/qureey/media.css">
+    <link rel="icon" type="image/gif" href="./assiet/media/9187604.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <article id="pre-load-state">
+        <span id="rotater">
+            <i class="fa-solid fa-rotate-right"></i>
+        </span>
+        <div class="text">
+            <p id="text-state">
+                Signed In Successfully
+            </p>
+            <p id="text-default">Redirecting!</p>
+        </div>
+    </article>
+    <article id="main-container">
+        <!-- Sign In  -->
+        <div class="content-container" id="sign-in-cont">
+            <form id="sign-in-form" class="form">
+                <h1>Sign In</h1>
+                <label for="fulltName">
+                    <p>Name</p>
+                    <input type="text" name="fulltName" id="sign-in-name" placeholder="Enter your full name here">
+                </label>
+                <label for="email">
+                    <p>Email</p>
+                    <input type="email" name="email" id="sign-in-email" placeholder="Enter your email here">
+                </label>
+                <label for="password">
+                    <p>Password</p>
+                    <input type="password" name="password" id="sign-in-password" placeholder="Enter your password here">
+                </label>
+                <button type="submit">Sign in</button>
+            </form>
+            <!-- Text  -->
+            <div class="text-container">
+                <h5>Welcome</h5>
+                <p>Welcome ! We are so happy to have you here . It's great to have you again . We hope you have had a
+                    safe
+                    and enjoyable time </p>
+                <div class="linking-cont">
+                    <p>Not have an account ?
+                        <span id="path-sign-up">Sign Up</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up  -->
+        <div class="content-container" id="sign-up-cont">
+            <form id="sign-up-form" class="form">
+                <h1>Sign Up</h1>
+                <label for="fulltName">
+                    <p>Name</p>
+                    <input type="text" name="fulltName" id="fulltName" placeholder="Enter your full name here">
+                </label>
+                <label for="email">
+                    <p>Email</p>
+                    <input type="email" name="email" id="sign-up-email" placeholder="Enter your email here">
+                </label>
+                <label for="password">
+                    <p>Password</p>
+                    <input type="password" name="password" id="sign-up-password" placeholder="Enter your password here">
+                </label>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <!-- Text  -->
+            <div class="text-container">
+                <h5>Welcome</h5>
+                <p>Welcome ! We are so happy to have you here . We hope you have had a safe and enjoyable time </p>
+                <div class="linking-cont">
+                    <p>Have an account ?
+                        <span id="path-sign-in">Sign In</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="error-unveiler">
+            <span id="icn">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </span>
+            <p id="error-text">Invalid Email or Password</p>
+            <button id="reloader">Retry</button>
+        </div>
+    </article>
+
+    <article id="user-details-cont">
+        <div class="header">
+            <div class="bg-text">
+                User Credentials
+            </div>
+            <div class="image">
+                <img src="./assets/Images/user-icn-lgo.png" alt="image">
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <div>Name :
+                    <span id="user-name">Abdurehman siddqiui</span>
+                </div>
+                <div>Email :
+                    <span id="user-email">rehmanenterprice123@gmail.com</span>
+                </div>
+                <div>Password :
+                    <span id="user-password">1234566</span>
+                </div>
+                <button id="sign-out-btn">Sign Out</button>
+            </div>
+        </div>
+    </article>
+</body>
+<script src="./assiet/script/main.js" type="module"></script>
+
+</html>
